@@ -32,17 +32,46 @@ Es posible que también necesites instalar Rust, en caso de que TikTok no propor
 pip install setuptools-rust
 Available models and languages
 
-#Para usar con fast api
+# OBJETIVO IMPORTATNTES
+instalar python
+```bash
+sudo apt install python3
+```
+instalar pip
+```bash
+sudo apt install pip
+sudo apt install python3-pip
+```
+instalamos venv
+```bash
+sudo apt install python3-venv
+```
 
-#instalamos fast api
+# Para usar con fast api
+
+instalamos fast api
+```bash
 pip install "fastapi[standard]"
-#corrremos fast api
+```
+corrremos fast api
+Modo Desarrollo
+```bash
 fastapi dev api.py #develop
+```
+Modo produccion
+```bash
 fastapi run api.py #produccion
+```
 
-#modo test que verifica codigo sin deterner el servidor
+modo test que verifica codigo sin deterner el servidor
+```bash
 pip install uvicorn
-#iniciar
+```
+iniciar uvcorn
+```bash
 uvicorn api:app
-api la hoja clase o la instacia preincipal de python 
+```
+api la hoja clase o la instacia preincipal de python
+```bash
 uvicorn api:app --host 192.168.10.3 --port 8000
+```
