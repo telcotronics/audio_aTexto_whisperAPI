@@ -46,6 +46,14 @@ instalamos venv
 ```bash
 sudo apt install python3-venv
 ```
+Para crear el entorno virtual de python
+```bash
+python3 -m venv api_env
+```
+Para activar el entorno virtual env de python
+```bash
+source api_env/bin/activate
+```
 
 # Para usar con fast api
 
