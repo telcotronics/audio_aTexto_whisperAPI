@@ -1,5 +1,5 @@
 #!/bin/bash
-
+session="servidor-API"
 VENV_DIR="venv"
 EXEC_CMD="fastapi run api.py "
 
