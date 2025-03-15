@@ -4,6 +4,8 @@ import whisper
 import tempfile
 import os
 
+#from dotenv import dotenv_values
+#config = dotenv_values(".env")
 model = whisper.load_model("small")
 
 app = FastAPI()
