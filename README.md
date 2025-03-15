@@ -54,6 +54,10 @@ Para activar el entorno virtual env de python
 ```bash
 source api_env/bin/activate
 ```
+Instalar requerimientos
+```bash
+pip install -r requirements.txt
+```
 
 # Para usar con fast api
 

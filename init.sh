@@ -23,5 +23,12 @@ if [ "$SiNo" = "s" ]; then
     exit 0
 else
     echo "Iniciando Servicio WHISPER API"
+    echo "**** iniciado TMUX ****"
+
+    tmux new-session -d -s $session
+    tmux new-window -t $session:$term0 -n 'API-WHISPER'
+    tmux send-keys -t $session:$term0 'sh app/'$sh1
+    tmux send-keys -t $session:$term0 Enter
     $EXEC_CMD
+    tmux send-keys -t $session:$term0 Enter
 fi
