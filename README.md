@@ -58,6 +58,10 @@ Instalar requerimientos
 ```bash
 pip install -r requirements.txt
 ```
+instalar tmux
+```bash
+sudo apt install tmux -y
+```
 
 # Para usar con fast api
 

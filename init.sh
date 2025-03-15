@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VENV_DIR="venv"
-EXEC_CMD="uvicorn api:app --reload"
+EXEC_CMD="fastapi run api.py "
 
 echo "EJECUCIÓN INICIAL 'SI=S, NO=n'"
 read SiNo
