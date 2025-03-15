@@ -2,6 +2,10 @@
 session="servidor-API"
 VENV_DIR="venv"
 EXEC_CMD="fastapi run api.py "
+cmd0="python3 -m venv api_env"
+cmd1="source api_env/bin/activate"
+cmd2="pip install whisper"
+cmd3='pip install "fastapi[standard]"'
 
 echo "EJECUCIÓN INICIAL 'SI=S, NO=n'"
 read SiNo
@@ -30,5 +34,13 @@ else
     tmux send-keys -t $session:$term0 'sh app/'$sh1
     tmux send-keys -t $session:$term0 Enter
     $EXEC_CMD
+    tmux send-keys -t $session:$term0 Enter
+    $cmd0
+    tmux send-keys -t $session:$term0 Enter
+    $cmd1
+    tmux send-keys -t $session:$term0 Enter
+    $cmd2
+    tmux send-keys -t $session:$term0 Enter
+    $cmd3
     tmux send-keys -t $session:$term0 Enter
 fi
